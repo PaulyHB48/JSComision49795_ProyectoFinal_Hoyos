@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!--BOOTSTRAP-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/sweetalert2/11.7.5/sweetalert2.min.css" integrity="sha512-InYSgxgTnnt8BG3Yy0GcpSnorz5gxHvT6OEoRWj91Gg+RvNdCiAharnBe+XFIDS754Kd9TekdjXw3V7TAgh6Vw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    
+    <!-- Comisión 49795 _ Pre-Entrega 3 Maria Paulina Hoyos Burgos -->
+    <title>APP SERVICIOS</title>
+
+
+</head>
+
+<body>
+    <header>
+        <h1>APP SERVICIOS</h1>
+    </header>
+    <main>
+        <p>Somos una compañía de fundada en el año 2017, enfocados en prestar servicios de transportes en vehículos de
+            transporte especial, buscamos siempre brindar servicios de calidad. <br>Contamos con conductores
+            experimentados que ofrecen un servicio excelente</p>
+        <h2>¡COTIZA TUS SERVICIOS DE TRANSPORTE! </h2>
+        <section>
+            <form id="form-sol-servicio" class="col-lg-12 mx-auto row">
+                <div class="form-group col-lg-9 container">
+                    <label for="empresa" class="text-label-inputs">NOMBRE DE LA EMPRESA</label>
+                    <input type="text" id="empresa" class="form-control" placeholder="">
+                </div>
+                <div class="col-lg-9 container">
+                    <label for="name-contacto" class="text-label-inputs">NOMBRE DE CONTACTO</label>
+                    <input type="text" id="name-contacto" class="form-control" placeholder="">
+                </div>
+                <div class="col-lg-9 container">
+                    <label for="num-contacto" class="text-label-inputs">NUMERO DE CONTACTO</label>
+                    <input type="text" id="num-contacto" class="form-control" placeholder="">
+                </div>
+                <div class="col-lg-9 container">
+                    <label for="num-usuarios" class="text-label-inputs">CANTIDAD DE USUARIOS (MÁXIMO 4 USUARIOS)</label>
+                    <input type="text" id="num-usuarios" class="form-control" placeholder="">
+                </div>
+                <div class="col-lg-9 container">
+                    <label for="ruta" class="text-label-inputs">SELECCIONE LA RUTA</label>
+                    <select id="ruta" class="form-control"></select>
+                </div>
+                <div class="container mt-4 container-btn">
+                    <button type="submit" id="sol-servicio" class="btn btn-primary">SOLICITAR SERVICIO</button>
+                </div>
+            </form>
+
+
+
+        </section>
+
+        <section>
+            </div class="table-responsive-sm">
+            <table class="table ancho-table table-bordered">
+                <thead class="table-success">
+                    <tr class="pad-th" id="trId">
+                        <th class="pad-th ancho-item" scope="col">#</th>
+                        <th class="pad-th ancho-empresa" scope="col">EMPRESA</th>
+                        <th class="pad-th ancho-contacto" scope="col">CONTACTO</th>
+                        <th class="pad-th ancho-ncontacto" scope="col"># CONTACTO</th>
+                        <th class="pad-th ancho-nusuarios" scope="col"># USUARIOS</th>
+                        <th class="pad-th ancho-ruta" scope="col">RUTA</th>
+                        <!-- <th class="pad-th ancho-valor" scope="col">VALOR</th> -->
+                    </tr>
+                </thead>
+                <tbody id="items">
+                </tbody>
+            </table>
+            <div class="container m-4 container-btn">
+                <button id="enviar" class="btn btn-primary">
+                    ENVIAR REPORTE
+                </button>
+                <button id="vaciar" class="btn btn-primary">
+                    LIMPIAR REPORTE
+                </button>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!--INVOCACIÓN ARCHIVO .JS BOOTSTRAP-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+
+    <!--INVOCACIÓN ARCHIVO .JS APLICACIÓN-->
+    <script src="./rutas.js"></script>
+    <script src="./servicio.js"></script>
+    <script src="./appProyectoFinal.js"></script>
+
+    <!--INVOCACIÓN ARCHIVO .JS LIBRERÍAS-->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+
+
+</body>
+
+</html>
