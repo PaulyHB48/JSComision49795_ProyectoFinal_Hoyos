@@ -1,7 +1,7 @@
 /*
 Comisión 49795 JavaScript
 
-Pre-Entrega 3
+PROYECTO FINAL
 
 Maria Paulina Hoyos Burgos
 */
@@ -24,13 +24,15 @@ class Servicios {
     nombreContact;
     numeroContact;
     numeroUsuarios;
+    correo;
     seleccionRuta;
     precio;
-    constructor(empresa, nombreContact, numeroContact, numeroUsuarios, seleccionRuta, precio) {
+    constructor(empresa, nombreContact, numeroContact, numeroUsuarios, correo, seleccionRuta, precio) {
         this.empresa = empresa;
         this.nombreContact = nombreContact;
         this.numeroContact = numeroContact;
         this.numeroUsuarios = numeroUsuarios;
+        this.correo = correo;
         this.seleccionRuta = seleccionRuta;
         this.precio = precio;
     }

@@ -1,0 +1,7 @@
+[
+    {"ruta": "MDE-JMC/JMC-MDE", "descripcion": "Transporte entre Medellin y el aeropuerto JMC o viceversa", "precio": 90000},
+    {"ruta": "ENV-JMC/JMC-ENV", "descripcion": "Transporte entre Envigado y el aeropuerto JMC o viceversa", "precio": 95000},
+    {"ruta": "SAB-JMC/JMC-SAB", "descripcion": "Transporte entre Sabaneta y el aeropuerto JMC o viceversa", "precio": 100000},
+    {"ruta": "BEL-JMC/JMC-BEL", "descripcion": "Transporte entre Bello y el aeropuerto JMC o viceversa", "precio": 105000}
+  ]
+  

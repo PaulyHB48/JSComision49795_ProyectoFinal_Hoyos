@@ -7,7 +7,7 @@
 header {
     background-color: rgba(86, 190, 86, 0.534);
     width: 100% !important;
-    height: 15vh;
+    height: 100px;
 }
 
 header h1 {
@@ -44,6 +44,11 @@ main h2 {
 }
 
 /*!----------------------- BS FORM ------------------------*/
+.container-form{
+    display: flex !important;
+    justify-content: center;
+}
+
 .text-label-inputs{
     margin-top: 10px;
     font-size:20px; 
@@ -58,12 +63,11 @@ main h2 {
 }
 
 .container-btn {
-    margin: 20px 0px 20px 203px !important;
+    text-align: center;    
     padding: 0px;
 }
 
 .table{
-    margin: 0px 0px 0px 203px !important; 
     text-align: center;
 }
 
@@ -72,8 +76,15 @@ main h2 {
 }
 
 .ancho-table{
-    width: 1110px;
+    width: 1200px;
 }
+
+.container-table{
+    display: flex !important;
+    justify-content: center;
+}
+
+
 
 
 /*!------------------------------------RESPONSIVE---------------------------------*/
@@ -83,10 +94,18 @@ main h2 {
         padding: 30px 100px 30px 100px;
     }
 
+
+    .form-control{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        
+    }
+
     .container{
         padding: 0px;
-        margin-left: 140px;
-        margin-right: 140px;
+        margin-left: 80px;
+        margin-right: 100px; 
     }
 
     .btn {
